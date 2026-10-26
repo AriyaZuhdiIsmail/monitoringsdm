@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sistem Informasi Monitoring SDM Pegadaian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div id="toast"></div><div id="modal" hidden><div class="md-box"><button id="mdx">&times;</button><div id="mdc"></div></div></div>
+<section id="login"><div class="lg-card">
+ <div class="lg-left">
+  <div class="lg-mark"><img src="pegadaian-logo.png" alt="Pegadaian"></div>
+  <div class="lg-copy"><small>SISTEM INFORMASI</small><h1>Monitoring<br>Pegadaian</h1>
+  <p>Monitoring struktur organisasi, formasi SOTK, dan kesiapan SDM Kantor Wilayah secara terintegrasi.</p></div>
+  <ul class="lg-points"><li>Monitoring SDM &amp; Struktur Jabatan</li><li>Manpower Planning &amp; Gap Formasi</li><li>SOTK &amp; Outlet Explorer</li></ul>
+  <div class="lg-tag">Wilayah Jakarta 1</div>
+ </div>
+ <div class="lg-right"><div class="lg-box">
+  <small>SELAMAT DATANG</small><h2>Masuk ke Sistem</h2><p class="mu">Gunakan akun yang telah diberikan oleh administrator.</p>
+  <label>Username</label><div class="inp"><span>&#128100;</span><input id="u" placeholder="Masukkan username" autocomplete="username"></div>
+  <label>Password</label><div class="inp"><span>&#128274;</span><input id="pw" type="password" placeholder="Masukkan password" autocomplete="current-password"><button type="button" id="eye">&#128065;</button></div>
+  <button class="btn" id="go">Masuk ke Dashboard <span>&#8594;</span></button><div id="err"></div>
+  <div class="lg-foot">Akun dikelola oleh administrator sistem.</div>
+ </div></div>
+</div></section>
+<div id="app" hidden><aside><div class="brand"><img src="pegadaian-logo.png" alt="Pegadaian"></div><nav id="nav"></nav>
+ <div class="side-user"><div class="av">A</div><div><b>Admin</b><small>Administrator</small></div><button class="lo" id="logout" title="Keluar">&#10162;</button></div></aside>
+<main><header><div><div class="crumb" id="crumb">Wilayah Jakarta 1</div><h2 id="ttl"></h2></div>
+ <div class="head-r"><div class="gsearch"><span>&#128269;</span><input id="gq" placeholder="Cari NIK / nama karyawan…"></div><span id="stat" class="pill"></span><button class="btn ghost" id="logout2">&#10162; Keluar</button></div></header><div id="tabs"></div><div id="view"></div></main></div>
+<script src="lib/xlsx.full.min.js"></script><script src="lib/chart.umd.js"></script><script src="app.js"></script><script src="features.js"></script></body></html>
